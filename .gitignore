@@ -1,0 +1,65 @@
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ===== Logs =====
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== Node / JS (React, React Native, Electron) =====
+node_modules/
+dist/
+build/
+out/
+coverage/
+.eslintcache
+.env
+.env.*
+!.env.example
+
+# ===== React Native =====
+# Metro
+.metro-cache/
+# Android
+apps/react-native/android/.gradle/
+apps/react-native/android/app/build/
+apps/react-native/android/build/
+# iOS
+apps/react-native/ios/Pods/
+apps/react-native/ios/build/
+apps/react-native/ios/*.xcworkspace
+apps/react-native/ios/*.xcuserstate
+apps/react-native/ios/Podfile.lock
+
+# ===== Electron =====
+apps/electron/release/
+apps/electron/.vite/
+
+# ===== Flutter =====
+# Flutter/Dart tooling
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+pubspec.lock
+build/
+# iOS/Android generated
+ios/Pods/
+ios/Runner.xcworkspace
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+android/.gradle/
+android/app/build/
+
+# ===== macOS / Windows Flutter builds =====
+macos/Flutter/ephemeral/
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/
