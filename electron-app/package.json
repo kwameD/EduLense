@@ -1,0 +1,13 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "EduLense Electron Hello World",
+  "index": "index.js",
+  "scripts": {
+    "start": "electron"
+  },
+  
+  "devDependencies": {
+    "electron": "^34.0.0"
+  }
+}
