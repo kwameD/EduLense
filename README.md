@@ -121,25 +121,25 @@ https://github.com/kwameD/EduLense/tree/Assignment-4
 ## 📱 App Screenshots
 
 ### Authentication Entry Screen
-![Auth Entry](screenshots/661_sign_in.png)
+![Auth Entry](screenshots/sign_In.png)
 
 ### Create Account Screen
-![Sign Up](screenshots/661_sign_up.png)
+![Sign Up](screenshots/sign_Up.png)
 
 ### Home Dashboard
-![Home](screenshots/661_home.png)
+![Home](screenshots/home.png)
 
 ### Courses Screen
-![Courses](screenshots/661_courses.png)
+![Courses](screenshots/courses.png)
 
 ### Progress Tracking
-![Progress](screenshots/661_progress.png)
+![Progress](screenshots/progress.png)
 
 ### Schedule Screen
-![Schedule](screenshots/661_schedule.png)
+![Schedule](screenshots/schedule.png)
 
 ### Profile Screen
-![Profile](screenshots/661_profile.png)
+![Profile](screenshots/profile.png)
 
 ### Sign Out Screen
 ![Profile](screenshots/661_profile_SignOut.png)
