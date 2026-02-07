@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'router/app_router.dart';
 
-class EduLenseApp extends StatelessWidget {
+class EduLenseApp extends ConsumerWidget {
   const EduLenseApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp.router(
       title: 'EduLense',
       debugShowCheckedModeBanner: false,
@@ -16,7 +18,7 @@ class EduLenseApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFF0F172A),
         cardColor: const Color(0xFF111C2E),
       ),
-      routerConfig: appRouter,
+      routerConfig: ref.watch(goRouterProvider),
     );
   }
 }

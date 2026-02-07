@@ -5,6 +5,32 @@ import '../../widgets/app_scaffold.dart';
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
+  Future<void> _handleSignOut(BuildContext context) async {
+    final confirm = await showDialog<bool>(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('Sign out?'),
+        content: const Text('You will return to the sign in screen.'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Sign Out'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirm == true) {
+      // ✅ Navigate back to your authentication entry screen
+      // Change '/auth' if your route is named differently.
+      context.go('/auth');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
@@ -133,6 +159,26 @@ class ProfileScreen extends StatelessWidget {
                       title: const Text('Notifications'),
                       trailing: const Icon(Icons.chevron_right),
                       onTap: () => context.go('/notifications'),
+                    ),
+                  ),
+
+                  const Divider(height: 1),
+
+                  // ✅ NEW: Sign Out option (no AuthService required)
+                  Semantics(
+                    button: true,
+                    label: 'Sign Out',
+                    child: ListTile(
+                      leading: const Icon(
+                        Icons.logout,
+                        color: Colors.redAccent,
+                      ),
+                      title: const Text(
+                        'Sign Out',
+                        style: TextStyle(color: Colors.redAccent),
+                      ),
+                      trailing: const Icon(Icons.chevron_right),
+                      onTap: () => _handleSignOut(context),
                     ),
                   ),
                 ],

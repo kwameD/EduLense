@@ -113,3 +113,48 @@ All AI-generated output was reviewed, tested, and refined before submission.
 ## Repository Branch
 Assignment 4 work is located on the Assignment-4 branch:
 https://github.com/kwameD/EduLense/tree/Assignment-4
+
+
+
+
+
+## 📱 App Screenshots
+
+### Authentication Entry Screen
+![Auth Entry](screenshots/661_sign_in.png)
+
+### Create Account Screen
+![Sign Up](screenshots/661_sign_up.png)
+
+### Home Dashboard
+![Home](screenshots/661_home.png)
+
+### Courses Screen
+![Courses](screenshots/661_courses.png)
+
+### Progress Tracking
+![Progress](screenshots/661_progress.png)
+
+### Schedule Screen
+![Schedule](screenshots/661_schedule.png)
+
+### Profile Screen
+![Profile](screenshots/661_profile.png)
+
+### Sign Out Screen
+![Profile](screenshots/661_profile_SignOut.png)
+
+---
+
+## How to Run the App
+
+### Prerequisites
+- Flutter SDK (3.x)
+- Android Studio (for emulator) or physical Android device
+- VS Code (recommended)
+
+### Run on Emulator or Device
+```bash
+flutter pub get
+flutter run
+

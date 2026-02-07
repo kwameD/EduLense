@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-class SettingsScreen extends StatefulWidget {
+import '../auth/state/auth_controller.dart';
+
+class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
 
   @override
-  State<SettingsScreen> createState() => _SettingsScreenState();
+  ConsumerState<SettingsScreen> createState() => _SettingsScreenState();
 }
 
-class _SettingsScreenState extends State<SettingsScreen> {
+class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   bool notifications = true;
   bool haptics = true;
 
@@ -38,6 +41,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
             value: haptics,
             onChanged: (v) => setState(() => haptics = v),
             title: const Text('Enable haptics'),
+          ),
+
+          const SizedBox(height: 24),
+
+          // Clear, accessible sign out action.
+          FilledButton.icon(
+            onPressed: () async {
+              await ref.read(authControllerProvider.notifier).signOut();
+              if (mounted) context.go('/auth');
+            },
+            icon: const Icon(Icons.logout),
+            label: const Text('Sign Out'),
           ),
         ],
       ),
