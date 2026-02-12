@@ -11,36 +11,25 @@ EduLense is a cross-platform app focused on a UI optimized for left-handed use
 ## Team Charter
 - [Team Charter](docs/team-charter.md)
 
-## Repo Structure
+## Repo Structure (High Level)
 - apps/flutter        -> Flutter mobile app
 - apps/react-native   -> React Native mobile app
 - apps/electron       -> Electron desktop app
 - apps/react-web      -> React web app
 - docs/               -> Documentation
 
-## Setup Instructions (Will be updated)
-### Prerequisites
-- Node.js
-- Git
-- Yarn
+---
 
-### Running Projects
-**React Web**
-1. cd apps/react-web
-2. npm install
-3. npm run dev
+# EduLense (React Native / Expo)
 
-**Electron**
-1. cd apps/electron
-2. npm install
-3. npm run start
+This React Native app implements the **same EduLense mobile UI features** as the Flutter version using:
+- **Expo**
+- **React Navigation**
+- **Context API** for auth
+- **Jest + React Native Testing Library** with a **60%+ coverage threshold**
+- Basic accessibility labels/roles on interactive UI
 
-**React Native**
-1. cd apps/react-native
-2. npm install
-3. npm run ios OR npm run android
-
-**Flutter**
-1. cd apps/flutter
-2. flutter pub get
-3. flutter run
+## Setup (React Native)
+```bash
+cd react-native-app
+npm install
