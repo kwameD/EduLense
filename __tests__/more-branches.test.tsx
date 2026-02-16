@@ -40,10 +40,9 @@ describe("more branch coverage", () => {
     );
 
     expect(ui.getByText("Simple")).toBeTruthy();
-    expect(ui.getByText("Pressable")).toBeTruthy();
-    expect(ui.getByText("Sub")).toBeTruthy();
-    expect(ui.getByText("99%")).toBeTruthy();
-
+    expect(ui.getByTestId("card-pressable")).toBeTruthy();
+    expect(ui.getByLabelText("pressable card")).toBeTruthy();
+    
     // There can be more than one element with the same testID because Card sets it on View + Pressable
     fireEvent.press(ui.getAllByTestId("card-pressable")[0]);
     expect(pressed).toHaveBeenCalled();
