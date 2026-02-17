@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "edulense-react-native",
   "version": "1.0.0",
   "private": true,
@@ -39,4 +40,28 @@
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.6.0"
   }
+=======
+  "name": "edulense",
+  "version": "1.0.0",
+  "description": "EduLense is a cross-platform app focused on a UI optimized for left-handed use (layout flow, dominant-hand ergonomics, control placement, and gesture comfort).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwameD/EduLense.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kwameD/EduLense/issues"
+  },
+  "homepage": "https://github.com/kwameD/EduLense#readme"
+>>>>>>> origin/Assignment-4
 }
