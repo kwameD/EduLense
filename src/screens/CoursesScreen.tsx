@@ -11,16 +11,20 @@ export function CoursesScreen() {
   const navigation = useNavigation<NativeStackNavigationProp<AppStackParamList>>();
 
   return (
-    <ScreenContainer>
+    <ScreenContainer accessibilityLabel="Courses screen">
       <View style={{ paddingTop: 12 }}>
-        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Courses</Text>
+        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
+          Courses
+        </Text>
+
         {COURSES.map((c) => (
           <Card
             key={c.id}
             title={c.title}
             subtitle={`${c.instructor}`}
             rightText={`${c.progressPct}%`}
-            accessibilityLabel={`${c.title} course card`}
+            accessibilityLabel={`Open course: ${c.title}`}
+            accessibilityHint="Opens course details"
             testID={`course-${c.id}`}
             onPress={() => navigation.navigate("CourseDetail", { courseId: c.id })}
           />
