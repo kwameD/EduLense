@@ -11,23 +11,55 @@ export function SettingsScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
     <ScreenContainer>
+=======
+    <ScreenContainer accessibilityLabel="Settings screen">
+>>>>>>> origin/assignment6-rn
       <View style={{ paddingTop: 12 }}>
-        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Settings</Text>
+        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
+          Settings
+        </Text>
 
-        <Card title="Accessibility Preferences" subtitle="Toggles for demo purposes" accessibilityLabel="Accessibility settings card" />
+        <Card
+          title="Accessibility Preferences"
+          subtitle="Toggles for demo purposes"
+          testID="cardAccessibilityPrefs"
+        />
 
-        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: 12,
+          }}
+        >
           <Text style={{ fontWeight: "700" }}>Reduce motion</Text>
-          <Switch accessibilityLabel="Reduce motion toggle" value={reduceMotion} onValueChange={setReduceMotion} />
+          <Switch
+            testID="toggleReduceMotion"
+            accessibilityRole="switch"
+            accessibilityLabel="Reduce motion"
+            accessibilityHint="Toggles reduced motion animations"
+            accessibilityState={{ checked: reduceMotion }}
+            value={reduceMotion}
+            onValueChange={setReduceMotion}
+          />
         </View>
 
-        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Text style={{ fontWeight: "700" }}>High contrast</Text>
+<<<<<<< HEAD
           <Switch accessibilityLabel="High contrast toggle" value={highContrast} onValueChange={setHighContrast} />
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -72,6 +104,8 @@ export function SettingsScreen() {
           }}
         >
           <Text style={{ fontWeight: "700" }}>High contrast</Text>
+=======
+>>>>>>> origin/assignment6-rn
           <Switch
             testID="toggleHighContrast"
             accessibilityRole="switch"
@@ -81,11 +115,14 @@ export function SettingsScreen() {
             value={highContrast}
             onValueChange={setHighContrast}
           />
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
+=======
+>>>>>>> origin/assignment6-rn
         </View>
       </View>
     </ScreenContainer>

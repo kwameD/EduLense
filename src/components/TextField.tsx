@@ -4,7 +4,10 @@ import { Text, TextInput, View } from "react-native";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/assignment6-rn
 type TextFieldProps = {
   label: string;
   value: string;
@@ -21,11 +24,14 @@ type TextFieldProps = {
   autoCapitalize?: "none" | "sentences" | "words" | "characters";
 };
 
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
+=======
+>>>>>>> origin/assignment6-rn
 export function TextField({
   label,
   value,
@@ -37,26 +43,32 @@ export function TextField({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
+=======
+  accessibilityHint,
+  errorText,
+>>>>>>> origin/assignment6-rn
   testID,
-}: {
-  label: string;
-  value: string;
-  onChangeText: (t: string) => void;
-  placeholder?: string;
-  secureTextEntry?: boolean;
-  keyboardType?: "default" | "email-address";
-  accessibilityLabel: string;
-  testID?: string;
-}) {
+  autoCapitalize = "none",
+}: TextFieldProps) {
+  const hasError = Boolean(errorText);
+
+  // If there's an error, include it in the hint so screen readers announce it on focus.
+  const mergedHint =
+    (accessibilityHint ? `${accessibilityHint}. ` : "") +
+    (hasError ? `Error: ${errorText}` : "");
+
   return (
     <View style={{ marginBottom: 12 }}>
       <Text style={{ marginBottom: 6, fontWeight: "600" }}>{label}</Text>
+
       <TextInput
         testID={testID}
+<<<<<<< HEAD
         accessibilityLabel={accessibilityLabel}
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86,11 +98,16 @@ export function TextField({
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
+=======
+        accessibilityLabel={accessibilityLabel ?? label}
+        accessibilityHint={mergedHint || undefined}
+>>>>>>> origin/assignment6-rn
         value={value}
         onChangeText={onChangeText}
         placeholder={placeholder}
         keyboardType={keyboardType ?? "default"}
         secureTextEntry={secureTextEntry}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -114,6 +131,12 @@ export function TextField({
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
+=======
+        autoCapitalize={autoCapitalize}
+        style={{
+          borderWidth: 1,
+          borderColor: hasError ? "#b91c1c" : "#d1d5db",
+>>>>>>> origin/assignment6-rn
           paddingHorizontal: 12,
           paddingVertical: 10,
           borderRadius: 12,
@@ -122,7 +145,10 @@ export function TextField({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/assignment6-rn
 
       {hasError ? (
         <Text
@@ -132,11 +158,14 @@ export function TextField({
           {errorText}
         </Text>
       ) : null}
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
+=======
+>>>>>>> origin/assignment6-rn
     </View>
   );
 }

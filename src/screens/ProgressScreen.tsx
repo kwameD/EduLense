@@ -9,16 +9,22 @@ export function ProgressScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Progress</Text>
 =======
     <ScreenContainer accessibilityLabel="Progress screen">
       <View style={{ paddingTop: 12 }}>
+=======
+    <ScreenContainer accessibilityLabel="Progress screen">
+      <View style={{ paddingTop: 12 }}>
+>>>>>>> origin/assignment6-rn
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
           Progress
         </Text>
 
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
     <ScreenContainer>
@@ -30,6 +36,8 @@ export function ProgressScreen() {
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Progress</Text>
 >>>>>>> origin/Assignment5
+=======
+>>>>>>> origin/assignment6-rn
         {PROGRESS.map((m) => (
           <Card
             key={m.id}
@@ -38,6 +46,7 @@ export function ProgressScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             accessibilityLabel={`${m.label} progress card`}
 =======
 >>>>>>> assignment6-rn
@@ -47,6 +56,8 @@ export function ProgressScreen() {
 =======
             accessibilityLabel={`${m.label} progress card`}
 >>>>>>> origin/Assignment5
+=======
+>>>>>>> origin/assignment6-rn
             testID={`progress-${m.id}`}
           />
         ))}

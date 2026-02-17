@@ -15,16 +15,22 @@ export function SignUpScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
       <View style={{ paddingTop: 18 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Create your account</Text>
 =======
     <ScreenContainer accessibilityLabel="Create account screen">
       <View style={{ paddingTop: 18 }}>
+=======
+    <ScreenContainer accessibilityLabel="Create account screen">
+      <View style={{ paddingTop: 18 }}>
+>>>>>>> origin/assignment6-rn
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
           Create your account
         </Text>
 
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
     <ScreenContainer>
@@ -36,11 +42,14 @@ export function SignUpScreen() {
       <View style={{ paddingTop: 18 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Create your account</Text>
 >>>>>>> origin/Assignment5
+=======
+>>>>>>> origin/assignment6-rn
         <TextField
           label="Name"
           value={name}
           onChangeText={setName}
           placeholder="Your name"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -63,12 +72,19 @@ export function SignUpScreen() {
           testID="inputName"
         />
 >>>>>>> origin/Assignment5
+=======
+          accessibilityHint="Enter your full name"
+          testID="inputName"
+        />
+
+>>>>>>> origin/assignment6-rn
         <TextField
           label="Email"
           value={email}
           onChangeText={setEmail}
           keyboardType="email-address"
           placeholder="name@example.com"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -91,6 +107,12 @@ export function SignUpScreen() {
           testID="inputEmail"
         />
 >>>>>>> origin/Assignment5
+=======
+          accessibilityHint="Enter your email address"
+          testID="inputEmail"
+        />
+
+>>>>>>> origin/assignment6-rn
         <TextField
           label="Password"
           value={password}
@@ -100,15 +122,21 @@ export function SignUpScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
           accessibilityLabel="Password input"
+=======
+          accessibilityHint="Create a password with at least 8 characters and a number"
+>>>>>>> origin/assignment6-rn
           testID="inputPassword"
         />
+
         <PrimaryButton
           title="Create Account"
+<<<<<<< HEAD
           accessibilityLabel="Create account submit button"
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -126,6 +154,10 @@ export function SignUpScreen() {
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
+=======
+          accessibilityLabel="Create account"
+          accessibilityHint="Creates a new account with the entered name, email, and password"
+>>>>>>> origin/assignment6-rn
           testID="btnSubmitSignUp"
           onPress={async () => {
             const res = await signUp(name, email, password);

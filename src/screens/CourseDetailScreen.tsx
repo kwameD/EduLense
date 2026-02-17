@@ -13,6 +13,7 @@ export function CourseDetailScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
@@ -38,6 +39,16 @@ export function CourseDetailScreen() {
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
+=======
+  const course = useMemo(
+    () => COURSES.find((c) => c.id === route.params.courseId),
+    [route.params.courseId]
+  );
+
+  if (!course) {
+    return (
+      <ScreenContainer accessibilityLabel="Course details screen">
+>>>>>>> origin/assignment6-rn
         <Text>Course not found.</Text>
       </ScreenContainer>
     );
@@ -47,15 +58,22 @@ export function CourseDetailScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
     <ScreenContainer>
+=======
+    <ScreenContainer accessibilityLabel={`Course details: ${course.title}`}>
+>>>>>>> origin/assignment6-rn
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800" }}>{course.title}</Text>
-        <Text style={{ color: "#4b5563", marginTop: 4 }}>{course.instructor} • {course.progressPct}% complete</Text>
+        <Text style={{ color: "#4b5563", marginTop: 4 }}>
+          {course.instructor} • {course.progressPct}% complete
+        </Text>
 
+<<<<<<< HEAD
         <View style={{ height: 14 }} />
         <Text style={{ fontSize: 16, fontWeight: "800", marginBottom: 8 }}>Lessons</Text>
 <<<<<<< HEAD
@@ -68,22 +86,28 @@ export function CourseDetailScreen() {
           {course.instructor} • {course.progressPct}% complete
         </Text>
 
+=======
+>>>>>>> origin/assignment6-rn
         <View accessible={false} style={{ height: 14 }} />
 
         <Text style={{ fontSize: 16, fontWeight: "800", marginBottom: 8 }}>
           Lessons
         </Text>
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
+=======
+>>>>>>> origin/assignment6-rn
 
         {course.lessons.map((l) => (
           <Card
             key={l.id}
             title={l.title}
             subtitle={`${l.durationMin} min${l.completed ? " • Completed" : ""}`}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94,12 +118,18 @@ export function CourseDetailScreen() {
             accessibilityLabel={`Open lesson: ${l.title}`}
             accessibilityHint="Opens lesson player"
             testID={`lesson-${l.id}`}
+=======
+            accessibilityLabel={`Open lesson: ${l.title}`}
+            accessibilityHint="Opens lesson player"
+            testID={`lesson-${l.id}`}
+>>>>>>> origin/assignment6-rn
             onPress={() =>
               navigation.navigate("LessonPlayer", {
                 courseId: course.id,
                 lessonId: l.id,
               })
             }
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
             accessibilityLabel={`${l.title} lesson card`}
@@ -111,6 +141,8 @@ export function CourseDetailScreen() {
             testID={`lesson-${l.id}`}
             onPress={() => navigation.navigate("LessonPlayer", { courseId: course.id, lessonId: l.id })}
 >>>>>>> origin/Assignment5
+=======
+>>>>>>> origin/assignment6-rn
           />
         ))}
       </View>

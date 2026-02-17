@@ -9,16 +9,22 @@ export function ScheduleScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Schedule</Text>
 =======
     <ScreenContainer accessibilityLabel="Schedule screen">
       <View style={{ paddingTop: 12 }}>
+=======
+    <ScreenContainer accessibilityLabel="Schedule screen">
+      <View style={{ paddingTop: 12 }}>
+>>>>>>> origin/assignment6-rn
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
           Schedule
         </Text>
 
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
     <ScreenContainer>
@@ -30,11 +36,14 @@ export function ScheduleScreen() {
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Schedule</Text>
 >>>>>>> origin/Assignment5
+=======
+>>>>>>> origin/assignment6-rn
         {SCHEDULE.map((s) => (
           <Card
             key={s.id}
             title={s.title}
             subtitle={`${s.date} • ${s.time}${s.location ? ` • ${s.location}` : ""}`}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -48,6 +57,9 @@ export function ScheduleScreen() {
 =======
             accessibilityLabel={`${s.title} schedule item`}
 >>>>>>> origin/Assignment5
+=======
+            testID={`schedule-${s.id}`}
+>>>>>>> origin/assignment6-rn
           />
         ))}
       </View>

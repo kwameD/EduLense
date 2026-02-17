@@ -21,6 +21,7 @@ export function LessonPlayerScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <ScreenContainer>
 =======
       <ScreenContainer accessibilityLabel="Lesson player screen">
@@ -31,6 +32,9 @@ export function LessonPlayerScreen() {
 =======
       <ScreenContainer>
 >>>>>>> origin/Assignment5
+=======
+      <ScreenContainer accessibilityLabel="Lesson player screen">
+>>>>>>> origin/assignment6-rn
         <Text>Lesson not found.</Text>
       </ScreenContainer>
     );
@@ -40,24 +44,33 @@ export function LessonPlayerScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
     <ScreenContainer>
+=======
+    <ScreenContainer accessibilityLabel={`Lesson player: ${lesson.title}`}>
+>>>>>>> origin/assignment6-rn
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800" }}>{lesson.title}</Text>
-        <Text style={{ color: "#4b5563", marginTop: 4 }}>{course.title} • {lesson.durationMin} min</Text>
+        <Text style={{ color: "#4b5563", marginTop: 4 }}>
+          {course.title} • {lesson.durationMin} min
+        </Text>
 
-        <View style={{ height: 14 }} />
+        <View accessible={false} style={{ height: 14 }} />
+
         <Card
           title="Lesson Content (Demo)"
           subtitle="In a real app, this would stream video, show readings, and track completion."
-          accessibilityLabel="Lesson content card"
+          testID="cardLessonContent"
         />
+
         <Card
           title="Accessibility Note"
           subtitle="Controls are labeled and have button roles for screen reader compatibility."
+<<<<<<< HEAD
           accessibilityLabel="Accessibility note card"
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86,6 +99,9 @@ export function LessonPlayerScreen() {
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
+=======
+          testID="cardAccessibilityNote"
+>>>>>>> origin/assignment6-rn
         />
       </View>
     </ScreenContainer>

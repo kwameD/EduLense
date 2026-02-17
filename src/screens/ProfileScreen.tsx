@@ -16,6 +16,7 @@ export function ProfileScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
 =======
     <ScreenContainer accessibilityLabel="Profile screen">
@@ -26,6 +27,9 @@ export function ProfileScreen() {
 =======
     <ScreenContainer>
 >>>>>>> origin/Assignment5
+=======
+    <ScreenContainer accessibilityLabel="Profile screen">
+>>>>>>> origin/assignment6-rn
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800" }}>Profile</Text>
         <Text style={{ color: "#4b5563", marginTop: 4 }}>
@@ -35,33 +39,48 @@ export function ProfileScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
         <View style={{ height: 14 }} />
+=======
+        <View accessible={false} style={{ height: 14 }} />
+
+>>>>>>> origin/assignment6-rn
         <Card
           title="Achievements"
           subtitle="Badges and milestones"
-          accessibilityLabel="Achievements navigation card"
+          accessibilityLabel="Open achievements"
+          accessibilityHint="Navigates to achievements"
+          testID="navAchievements"
           onPress={() => navigation.navigate("Achievements")}
         />
+
         <Card
           title="Notifications"
           subtitle="Manage reminders"
-          accessibilityLabel="Notifications navigation card"
+          accessibilityLabel="Open notifications"
+          accessibilityHint="Navigates to notifications"
+          testID="navNotifications"
           onPress={() => navigation.navigate("Notifications")}
         />
+
         <Card
           title="Settings"
           subtitle="App preferences"
-          accessibilityLabel="Settings navigation card"
+          accessibilityLabel="Open settings"
+          accessibilityHint="Navigates to settings"
+          testID="navSettings"
           onPress={() => navigation.navigate("Settings")}
         />
 
-        <View style={{ height: 8 }} />
+        <View accessible={false} style={{ height: 8 }} />
+
         <PrimaryButton
           title="Sign Out"
+<<<<<<< HEAD
           accessibilityLabel="Sign out button"
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -106,6 +125,10 @@ export function ProfileScreen() {
 >>>>>>> Assignment5
 =======
 >>>>>>> origin/Assignment5
+=======
+          accessibilityLabel="Sign out"
+          accessibilityHint="Signs out of the current account"
+>>>>>>> origin/assignment6-rn
           testID="btnSignOut"
           onPress={() => signOut()}
         />
