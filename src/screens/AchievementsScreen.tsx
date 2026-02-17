@@ -11,11 +11,19 @@ const ACH = [
 
 export function AchievementsScreen() {
   return (
-    <ScreenContainer>
+    <ScreenContainer accessibilityLabel="Achievements screen">
       <View style={{ paddingTop: 12 }}>
-        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Achievements</Text>
+        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
+          Achievements
+        </Text>
+
         {ACH.map((a) => (
-          <Card key={a.id} title={a.title} subtitle={a.subtitle} accessibilityLabel={`${a.title} achievement`} />
+          <Card
+            key={a.id}
+            title={a.title}
+            subtitle={a.subtitle}
+            testID={`achievement-${a.id}`}
+          />
         ))}
       </View>
     </ScreenContainer>
