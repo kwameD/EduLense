@@ -1,5 +1,8 @@
 {
   "plugins": [
     "expo-asset"
-  ]
+  ],
+  "android": {
+    "package": "com.chrisgarcia91.edulensereactnative"
+  }
 }

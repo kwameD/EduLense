@@ -1,0 +1,28 @@
+pluginManagement {
+  repositories {
+    gradlePluginPortal()
+    google()
+    mavenCentral()
+  }
+}
+
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+  repositories {
+    google()
+    mavenCentral()
+
+    // Detox Android local Maven repo (required for com.wix:detox)
+    maven { url("$rootDir/../node_modules/detox/Detox-android") }
+  }
+}
+
+rootProject.name = "edulense-react-native"
+
+apply from: new File(["node", "--print", "require.resolve('expo/package.json')"].execute(null, rootDir).text.trim(), "../scripts/autolinking.gradle")
+useExpoModules()
+
+apply from: new File(["node", "--print", "require.resolve('react-native/package.json')"].execute(null, rootDir).text.trim(), "../packages/react-native-gradle-plugin/settings.gradle")
+applyNativeModulesSettingsGradle(settings)
+
+include(":app")
