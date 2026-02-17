@@ -12,38 +12,45 @@ export function SignUpScreen() {
   const [password, setPassword] = useState("");
 
   return (
-    <ScreenContainer>
+    <ScreenContainer accessibilityLabel="Create account screen">
       <View style={{ paddingTop: 18 }}>
-        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Create your account</Text>
+        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
+          Create your account
+        </Text>
+
         <TextField
           label="Name"
           value={name}
           onChangeText={setName}
           placeholder="Your name"
-          accessibilityLabel="Name input"
+          accessibilityHint="Enter your full name"
           testID="inputName"
         />
+
         <TextField
           label="Email"
           value={email}
           onChangeText={setEmail}
           keyboardType="email-address"
           placeholder="name@example.com"
-          accessibilityLabel="Email input"
+          accessibilityHint="Enter your email address"
           testID="inputEmail"
         />
+
         <TextField
           label="Password"
           value={password}
           onChangeText={setPassword}
           secureTextEntry
           placeholder="8+ chars, include a number"
-          accessibilityLabel="Password input"
+          accessibilityHint="Create a password with at least 8 characters and a number"
           testID="inputPassword"
         />
+
         <PrimaryButton
           title="Create Account"
-          accessibilityLabel="Create account submit button"
+          accessibilityLabel="Create account"
+          accessibilityHint="Creates a new account with the entered name, email, and password"
           testID="btnSubmitSignUp"
           onPress={async () => {
             const res = await signUp(name, email, password);
