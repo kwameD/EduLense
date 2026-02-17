@@ -13,37 +13,48 @@ export function ProfileScreen() {
   const navigation = useNavigation<NativeStackNavigationProp<AppStackParamList>>();
 
   return (
-    <ScreenContainer>
+    <ScreenContainer accessibilityLabel="Profile screen">
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800" }}>Profile</Text>
         <Text style={{ color: "#4b5563", marginTop: 4 }}>
           {user?.name ?? "Student"} • {user?.email ?? ""}
         </Text>
 
-        <View style={{ height: 14 }} />
+        <View accessible={false} style={{ height: 14 }} />
+
         <Card
           title="Achievements"
           subtitle="Badges and milestones"
-          accessibilityLabel="Achievements navigation card"
+          accessibilityLabel="Open achievements"
+          accessibilityHint="Navigates to achievements"
+          testID="navAchievements"
           onPress={() => navigation.navigate("Achievements")}
         />
+
         <Card
           title="Notifications"
           subtitle="Manage reminders"
-          accessibilityLabel="Notifications navigation card"
+          accessibilityLabel="Open notifications"
+          accessibilityHint="Navigates to notifications"
+          testID="navNotifications"
           onPress={() => navigation.navigate("Notifications")}
         />
+
         <Card
           title="Settings"
           subtitle="App preferences"
-          accessibilityLabel="Settings navigation card"
+          accessibilityLabel="Open settings"
+          accessibilityHint="Navigates to settings"
+          testID="navSettings"
           onPress={() => navigation.navigate("Settings")}
         />
 
-        <View style={{ height: 8 }} />
+        <View accessible={false} style={{ height: 8 }} />
+
         <PrimaryButton
           title="Sign Out"
-          accessibilityLabel="Sign out button"
+          accessibilityLabel="Sign out"
+          accessibilityHint="Signs out of the current account"
           testID="btnSignOut"
           onPress={() => signOut()}
         />
