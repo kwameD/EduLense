@@ -1,5 +1,8 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/Assignment5
   "name": "edulense-react-native",
   "version": "1.0.0",
   "private": true,
@@ -40,6 +43,7 @@
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.6.0"
   }
+<<<<<<< HEAD
 =======
   "name": "edulense",
   "version": "1.0.0",
@@ -64,4 +68,6 @@
   },
   "homepage": "https://github.com/kwameD/EduLense#readme"
 >>>>>>> origin/Assignment-4
+=======
+>>>>>>> origin/Assignment5
 }

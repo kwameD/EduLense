@@ -3,6 +3,7 @@ import { Text, TextInput, View } from "react-native";
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 type TextFieldProps = {
   label: string;
@@ -23,6 +24,8 @@ type TextFieldProps = {
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
 export function TextField({
   label,
   value,
@@ -33,8 +36,11 @@ export function TextField({
   accessibilityLabel,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
   testID,
 }: {
   label: string;
@@ -52,6 +58,7 @@ export function TextField({
       <TextInput
         testID={testID}
         accessibilityLabel={accessibilityLabel}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   accessibilityHint,
@@ -77,6 +84,8 @@ export function TextField({
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
         value={value}
         onChangeText={onChangeText}
         placeholder={placeholder}
@@ -84,12 +93,16 @@ export function TextField({
         secureTextEntry={secureTextEntry}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
         autoCapitalize="none"
         style={{
           borderWidth: 1,
           borderColor: "#d1d5db",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         autoCapitalize={autoCapitalize}
@@ -99,11 +112,14 @@ export function TextField({
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
           paddingHorizontal: 12,
           paddingVertical: 10,
           borderRadius: 12,
         }}
       />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -119,6 +135,8 @@ export function TextField({
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
     </View>
   );
 }

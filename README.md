@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/Assignment5
 # EduLense
 
 EduLense is a cross-platform app focused on a UI optimized for left-handed use
@@ -34,6 +37,7 @@ This React Native app implements the **same EduLense mobile UI features** as the
 ```bash
 cd react-native-app
 npm install
+<<<<<<< HEAD
 =======
 # EduLense – Assignment 4 (Flutter Application)
 
@@ -196,3 +200,5 @@ flutter pub get
 flutter run
 
 >>>>>>> origin/Assignment-4
+=======
+>>>>>>> origin/Assignment5

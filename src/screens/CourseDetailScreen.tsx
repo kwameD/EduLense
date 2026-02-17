@@ -12,13 +12,17 @@ export function CourseDetailScreen() {
   const navigation = useNavigation<NativeStackNavigationProp<AppStackParamList>>();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
   const course = useMemo(() => COURSES.find((c) => c.id === route.params.courseId), [route.params.courseId]);
 
   if (!course) {
     return (
       <ScreenContainer>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   const course = useMemo(
@@ -32,6 +36,8 @@ export function CourseDetailScreen() {
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
         <Text>Course not found.</Text>
       </ScreenContainer>
     );
@@ -40,8 +46,11 @@ export function CourseDetailScreen() {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800" }}>{course.title}</Text>
@@ -49,6 +58,7 @@ export function CourseDetailScreen() {
 
         <View style={{ height: 14 }} />
         <Text style={{ fontSize: 16, fontWeight: "800", marginBottom: 8 }}>Lessons</Text>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     <ScreenContainer accessibilityLabel={`Course details: ${course.title}`}>
@@ -66,12 +76,15 @@ export function CourseDetailScreen() {
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
 
         {course.lessons.map((l) => (
           <Card
             key={l.id}
             title={l.title}
             subtitle={`${l.durationMin} min${l.completed ? " • Completed" : ""}`}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             accessibilityLabel={`${l.title} lesson card`}
@@ -93,6 +106,11 @@ export function CourseDetailScreen() {
             testID={`lesson-${l.id}`}
             onPress={() => navigation.navigate("LessonPlayer", { courseId: course.id, lessonId: l.id })}
 >>>>>>> Assignment5
+=======
+            accessibilityLabel={`${l.title} lesson card`}
+            testID={`lesson-${l.id}`}
+            onPress={() => navigation.navigate("LessonPlayer", { courseId: course.id, lessonId: l.id })}
+>>>>>>> origin/Assignment5
           />
         ))}
       </View>

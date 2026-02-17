@@ -3,6 +3,7 @@ import { Pressable, Text, View } from "react-native";
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 type CardProps = {
   title: string;
@@ -17,6 +18,8 @@ type CardProps = {
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
 export function Card({
   title,
   subtitle,
@@ -25,8 +28,11 @@ export function Card({
   accessibilityLabel,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
   testID,
 }: {
   title: string;
@@ -40,6 +46,7 @@ export function Card({
     <View
       // ✅ Always attach testID to a real native element (fixes ProgressScreen test)
       testID={testID}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   accessibilityHint,
@@ -56,6 +63,8 @@ export function Card({
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
       style={{
         borderWidth: 1,
         borderColor: "#e5e7eb",
@@ -70,6 +79,7 @@ export function Card({
           <Text style={{ fontSize: 16, fontWeight: "700" }}>{title}</Text>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           {!!subtitle && <Text style={{ marginTop: 4, color: "#4b5563" }}>{subtitle}</Text>}
 =======
           {!!subtitle && (
@@ -79,12 +89,16 @@ export function Card({
 =======
           {!!subtitle && <Text style={{ marginTop: 4, color: "#4b5563" }}>{subtitle}</Text>}
 >>>>>>> Assignment5
+=======
+          {!!subtitle && <Text style={{ marginTop: 4, color: "#4b5563" }}>{subtitle}</Text>}
+>>>>>>> origin/Assignment5
         </View>
         {!!rightText && <Text style={{ fontWeight: "700" }}>{rightText}</Text>}
       </View>
     </View>
   );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   if (!onPress) return Body;
@@ -100,11 +114,15 @@ export function Card({
 =======
   if (!onPress) return Body;
 >>>>>>> Assignment5
+=======
+  if (!onPress) return Body;
+>>>>>>> origin/Assignment5
 
   return (
     <Pressable
       testID={testID}
       accessibilityRole="button"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       accessibilityLabel={accessibilityLabel}
@@ -115,6 +133,9 @@ export function Card({
 =======
       accessibilityLabel={accessibilityLabel}
 >>>>>>> Assignment5
+=======
+      accessibilityLabel={accessibilityLabel}
+>>>>>>> origin/Assignment5
       onPress={onPress}
       style={({ pressed }) => ({ opacity: pressed ? 0.85 : 1 })}
     >

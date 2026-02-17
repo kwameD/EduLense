@@ -3,6 +3,7 @@ import { Pressable, Text } from "react-native";
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 type PrimaryButtonProps = {
   title: string;
@@ -16,14 +17,19 @@ type PrimaryButtonProps = {
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
 export function PrimaryButton({
   title,
   onPress,
   accessibilityLabel,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
   testID,
 }: {
   title: string;
@@ -31,6 +37,7 @@ export function PrimaryButton({
   accessibilityLabel: string;
   testID?: string;
 }) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   accessibilityHint,
@@ -40,10 +47,13 @@ export function PrimaryButton({
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
   return (
     <Pressable
       testID={testID}
       accessibilityRole="button"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       accessibilityLabel={accessibilityLabel}
@@ -56,6 +66,9 @@ export function PrimaryButton({
 =======
       accessibilityLabel={accessibilityLabel}
 >>>>>>> Assignment5
+=======
+      accessibilityLabel={accessibilityLabel}
+>>>>>>> origin/Assignment5
       onPress={onPress}
       style={({ pressed }) => ({
         paddingVertical: 12,
@@ -64,8 +77,11 @@ export function PrimaryButton({
         backgroundColor: "#111827",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
         opacity: pressed ? 0.85 : 1,
         alignItems: "center",
       })}
@@ -74,6 +90,7 @@ export function PrimaryButton({
     </Pressable>
   );
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         opacity: disabled ? 0.5 : pressed ? 0.85 : 1,
@@ -89,3 +106,5 @@ export function PrimaryButton({
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5

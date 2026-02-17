@@ -10,8 +10,11 @@ export function SettingsScreen() {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Settings</Text>
@@ -26,6 +29,7 @@ export function SettingsScreen() {
         <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
           <Text style={{ fontWeight: "700" }}>High contrast</Text>
           <Switch accessibilityLabel="High contrast toggle" value={highContrast} onValueChange={setHighContrast} />
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     <ScreenContainer accessibilityLabel="Settings screen">
@@ -80,6 +84,8 @@ export function SettingsScreen() {
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
         </View>
       </View>
     </ScreenContainer>

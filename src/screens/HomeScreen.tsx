@@ -2,11 +2,14 @@ import React from "react";
 import { Text, View } from "react-native";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { useNavigation } from "@react-navigation/native";
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
 import { ScreenContainer } from "../components/ScreenContainer";
 import { Card } from "../components/Card";
 import { PROGRESS } from "../data/progress";
@@ -15,13 +18,17 @@ import { COURSES } from "../data/courses";
 export function HomeScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
   const topCourse = COURSES[0];
   return (
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Dashboard</Text>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   const navigation = useNavigation<any>();
@@ -36,6 +43,8 @@ export function HomeScreen() {
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
 
         <Card
           title="Continue learning"
@@ -43,12 +52,16 @@ export function HomeScreen() {
           rightText={`${topCourse.progressPct}%`}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
           accessibilityLabel="Continue learning card"
         />
 
         <Text style={{ fontSize: 16, fontWeight: "800", marginBottom: 8 }}>This week</Text>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           onPress={() => navigation.navigate("Courses")}
@@ -64,11 +77,14 @@ export function HomeScreen() {
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
         {PROGRESS.map((m) => (
           <Card
             key={m.id}
             title={m.label}
             rightText={m.value}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             accessibilityLabel={`${m.label} card`}
@@ -79,6 +95,9 @@ export function HomeScreen() {
 =======
             accessibilityLabel={`${m.label} card`}
 >>>>>>> Assignment5
+=======
+            accessibilityLabel={`${m.label} card`}
+>>>>>>> origin/Assignment5
           />
         ))}
       </View>

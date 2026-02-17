@@ -15,6 +15,7 @@ export function ProfileScreen() {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
 =======
     <ScreenContainer accessibilityLabel="Profile screen">
@@ -22,6 +23,9 @@ export function ProfileScreen() {
 =======
     <ScreenContainer>
 >>>>>>> Assignment5
+=======
+    <ScreenContainer>
+>>>>>>> origin/Assignment5
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800" }}>Profile</Text>
         <Text style={{ color: "#4b5563", marginTop: 4 }}>
@@ -30,8 +34,11 @@ export function ProfileScreen() {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
         <View style={{ height: 14 }} />
         <Card
           title="Achievements"
@@ -56,6 +63,7 @@ export function ProfileScreen() {
         <PrimaryButton
           title="Sign Out"
           accessibilityLabel="Sign out button"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         <View accessible={false} style={{ height: 14 }} />
@@ -96,6 +104,8 @@ export function ProfileScreen() {
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
           testID="btnSignOut"
           onPress={() => signOut()}
         />

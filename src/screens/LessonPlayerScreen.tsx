@@ -20,6 +20,7 @@ export function LessonPlayerScreen() {
     return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <ScreenContainer>
 =======
       <ScreenContainer accessibilityLabel="Lesson player screen">
@@ -27,6 +28,9 @@ export function LessonPlayerScreen() {
 =======
       <ScreenContainer>
 >>>>>>> Assignment5
+=======
+      <ScreenContainer>
+>>>>>>> origin/Assignment5
         <Text>Lesson not found.</Text>
       </ScreenContainer>
     );
@@ -35,8 +39,11 @@ export function LessonPlayerScreen() {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800" }}>{lesson.title}</Text>
@@ -52,6 +59,7 @@ export function LessonPlayerScreen() {
           title="Accessibility Note"
           subtitle="Controls are labeled and have button roles for screen reader compatibility."
           accessibilityLabel="Accessibility note card"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     <ScreenContainer accessibilityLabel={`Lesson player: ${lesson.title}`}>
@@ -76,6 +84,8 @@ export function LessonPlayerScreen() {
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
         />
       </View>
     </ScreenContainer>

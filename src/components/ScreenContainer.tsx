@@ -4,13 +4,17 @@ import { useResponsiveMaxWidth } from "../hooks/useResponsiveMaxWidth";
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
 export function ScreenContainer({ children }: { children: React.ReactNode }) {
   const maxWidth = useResponsiveMaxWidth();
   return (
     <View style={{ flex: 1, padding: 16, alignItems: "center" }}>
       <View style={{ width: "100%", maxWidth }}>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 type ScreenContainerProps = {
@@ -37,6 +41,8 @@ export function ScreenContainer({
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
+=======
+>>>>>>> origin/Assignment5
         {children}
       </View>
     </View>
