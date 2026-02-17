@@ -6,15 +6,17 @@ import { PROGRESS } from "../data/progress";
 
 export function ProgressScreen() {
   return (
-    <ScreenContainer>
+    <ScreenContainer accessibilityLabel="Progress screen">
       <View style={{ paddingTop: 12 }}>
-        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Progress</Text>
+        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
+          Progress
+        </Text>
+
         {PROGRESS.map((m) => (
           <Card
             key={m.id}
             title={m.label}
             rightText={m.value}
-            accessibilityLabel={`${m.label} progress card`}
             testID={`progress-${m.id}`}
           />
         ))}
