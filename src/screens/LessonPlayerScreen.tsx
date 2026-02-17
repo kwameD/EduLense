@@ -18,28 +18,32 @@ export function LessonPlayerScreen() {
 
   if (!course || !lesson) {
     return (
-      <ScreenContainer>
+      <ScreenContainer accessibilityLabel="Lesson player screen">
         <Text>Lesson not found.</Text>
       </ScreenContainer>
     );
   }
 
   return (
-    <ScreenContainer>
+    <ScreenContainer accessibilityLabel={`Lesson player: ${lesson.title}`}>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800" }}>{lesson.title}</Text>
-        <Text style={{ color: "#4b5563", marginTop: 4 }}>{course.title} • {lesson.durationMin} min</Text>
+        <Text style={{ color: "#4b5563", marginTop: 4 }}>
+          {course.title} • {lesson.durationMin} min
+        </Text>
 
-        <View style={{ height: 14 }} />
+        <View accessible={false} style={{ height: 14 }} />
+
         <Card
           title="Lesson Content (Demo)"
           subtitle="In a real app, this would stream video, show readings, and track completion."
-          accessibilityLabel="Lesson content card"
+          testID="cardLessonContent"
         />
+
         <Card
           title="Accessibility Note"
           subtitle="Controls are labeled and have button roles for screen reader compatibility."
-          accessibilityLabel="Accessibility note card"
+          testID="cardAccessibilityNote"
         />
       </View>
     </ScreenContainer>
