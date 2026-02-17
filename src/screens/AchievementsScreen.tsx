@@ -12,11 +12,15 @@ const ACH = [
 export function AchievementsScreen() {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Assignment5
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Achievements</Text>
         {ACH.map((a) => (
           <Card key={a.id} title={a.title} subtitle={a.subtitle} accessibilityLabel={`${a.title} achievement`} />
+<<<<<<< HEAD
 =======
     <ScreenContainer accessibilityLabel="Achievements screen">
       <View style={{ paddingTop: 12 }}>
@@ -32,6 +36,8 @@ export function AchievementsScreen() {
             testID={`achievement-${a.id}`}
           />
 >>>>>>> assignment6-rn
+=======
+>>>>>>> Assignment5
         ))}
       </View>
     </ScreenContainer>

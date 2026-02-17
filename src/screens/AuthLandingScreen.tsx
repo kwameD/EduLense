@@ -10,10 +10,14 @@ type Props = NativeStackScreenProps<AuthStackParamList, "AuthLanding">;
 export function AuthLandingScreen({ navigation }: Props) {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
 =======
     <ScreenContainer accessibilityLabel="Authentication landing screen">
 >>>>>>> assignment6-rn
+=======
+    <ScreenContainer>
+>>>>>>> Assignment5
       <View style={{ gap: 12, paddingTop: 24 }}>
         <Text style={{ fontSize: 28, fontWeight: "800" }}>EduLense</Text>
         <Text style={{ color: "#4b5563" }}>
@@ -21,6 +25,9 @@ export function AuthLandingScreen({ navigation }: Props) {
         </Text>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Assignment5
         <View style={{ height: 12 }} />
         <PrimaryButton
           title="Sign In"
@@ -32,6 +39,7 @@ export function AuthLandingScreen({ navigation }: Props) {
         <PrimaryButton
           title="Create Account"
           accessibilityLabel="Create account button"
+<<<<<<< HEAD
 =======
         <View accessible={false} style={{ height: 12 }} />
 
@@ -50,6 +58,8 @@ export function AuthLandingScreen({ navigation }: Props) {
           accessibilityLabel="Create account"
           accessibilityHint="Opens the account creation form"
 >>>>>>> assignment6-rn
+=======
+>>>>>>> Assignment5
           testID="btnSignUp"
           onPress={() => navigation.navigate("SignUp")}
         />

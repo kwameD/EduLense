@@ -2,6 +2,7 @@ import React from "react";
 import { Pressable, Text, View } from "react-native";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 type CardProps = {
   title: string;
@@ -14,6 +15,8 @@ type CardProps = {
 };
 
 >>>>>>> assignment6-rn
+=======
+>>>>>>> Assignment5
 export function Card({
   title,
   subtitle,
@@ -21,6 +24,9 @@ export function Card({
   onPress,
   accessibilityLabel,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Assignment5
   testID,
 }: {
   title: string;
@@ -34,6 +40,7 @@ export function Card({
     <View
       // ✅ Always attach testID to a real native element (fixes ProgressScreen test)
       testID={testID}
+<<<<<<< HEAD
 =======
   accessibilityHint,
   testID,
@@ -47,6 +54,8 @@ export function Card({
       // If pressable, keep the wrapper as the accessible element to avoid double-reading.
       importantForAccessibility={isPressable ? "no-hide-descendants" : "auto"}
 >>>>>>> assignment6-rn
+=======
+>>>>>>> Assignment5
       style={{
         borderWidth: 1,
         borderColor: "#e5e7eb",
@@ -60,18 +69,23 @@ export function Card({
         <View style={{ flex: 1 }}>
           <Text style={{ fontSize: 16, fontWeight: "700" }}>{title}</Text>
 <<<<<<< HEAD
+<<<<<<< HEAD
           {!!subtitle && <Text style={{ marginTop: 4, color: "#4b5563" }}>{subtitle}</Text>}
 =======
           {!!subtitle && (
             <Text style={{ marginTop: 4, color: "#4b5563" }}>{subtitle}</Text>
           )}
 >>>>>>> assignment6-rn
+=======
+          {!!subtitle && <Text style={{ marginTop: 4, color: "#4b5563" }}>{subtitle}</Text>}
+>>>>>>> Assignment5
         </View>
         {!!rightText && <Text style={{ fontWeight: "700" }}>{rightText}</Text>}
       </View>
     </View>
   );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   if (!onPress) return Body;
 =======
@@ -83,17 +97,24 @@ export function Card({
     );
   }
 >>>>>>> assignment6-rn
+=======
+  if (!onPress) return Body;
+>>>>>>> Assignment5
 
   return (
     <Pressable
       testID={testID}
       accessibilityRole="button"
 <<<<<<< HEAD
+<<<<<<< HEAD
       accessibilityLabel={accessibilityLabel}
 =======
       accessibilityLabel={computedLabel}
       accessibilityHint={accessibilityHint}
 >>>>>>> assignment6-rn
+=======
+      accessibilityLabel={accessibilityLabel}
+>>>>>>> Assignment5
       onPress={onPress}
       style={({ pressed }) => ({ opacity: pressed ? 0.85 : 1 })}
     >

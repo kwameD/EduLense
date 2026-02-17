@@ -7,6 +7,7 @@ import { PROGRESS } from "../data/progress";
 export function ProgressScreen() {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Progress</Text>
@@ -18,15 +19,24 @@ export function ProgressScreen() {
         </Text>
 
 >>>>>>> assignment6-rn
+=======
+    <ScreenContainer>
+      <View style={{ paddingTop: 12 }}>
+        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Progress</Text>
+>>>>>>> Assignment5
         {PROGRESS.map((m) => (
           <Card
             key={m.id}
             title={m.label}
             rightText={m.value}
 <<<<<<< HEAD
+<<<<<<< HEAD
             accessibilityLabel={`${m.label} progress card`}
 =======
 >>>>>>> assignment6-rn
+=======
+            accessibilityLabel={`${m.label} progress card`}
+>>>>>>> Assignment5
             testID={`progress-${m.id}`}
           />
         ))}

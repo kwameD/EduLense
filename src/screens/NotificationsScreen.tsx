@@ -9,6 +9,9 @@ export function NotificationsScreen() {
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Assignment5
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Notifications</Text>
@@ -22,6 +25,7 @@ export function NotificationsScreen() {
         <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
           <Text style={{ fontWeight: "700" }}>Deadline reminders</Text>
           <Switch accessibilityLabel="Deadline reminders toggle" value={deadlineReminders} onValueChange={setDeadlineReminders} />
+<<<<<<< HEAD
 =======
     <ScreenContainer accessibilityLabel="Notifications screen">
       <View style={{ paddingTop: 12 }}>
@@ -73,6 +77,8 @@ export function NotificationsScreen() {
             onValueChange={setDeadlineReminders}
           />
 >>>>>>> assignment6-rn
+=======
+>>>>>>> Assignment5
         </View>
       </View>
     </ScreenContainer>

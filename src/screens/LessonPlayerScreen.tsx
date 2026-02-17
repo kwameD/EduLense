@@ -19,10 +19,14 @@ export function LessonPlayerScreen() {
   if (!course || !lesson) {
     return (
 <<<<<<< HEAD
+<<<<<<< HEAD
       <ScreenContainer>
 =======
       <ScreenContainer accessibilityLabel="Lesson player screen">
 >>>>>>> assignment6-rn
+=======
+      <ScreenContainer>
+>>>>>>> Assignment5
         <Text>Lesson not found.</Text>
       </ScreenContainer>
     );
@@ -30,6 +34,9 @@ export function LessonPlayerScreen() {
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Assignment5
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800" }}>{lesson.title}</Text>
@@ -45,6 +52,7 @@ export function LessonPlayerScreen() {
           title="Accessibility Note"
           subtitle="Controls are labeled and have button roles for screen reader compatibility."
           accessibilityLabel="Accessibility note card"
+<<<<<<< HEAD
 =======
     <ScreenContainer accessibilityLabel={`Lesson player: ${lesson.title}`}>
       <View style={{ paddingTop: 12 }}>
@@ -66,6 +74,8 @@ export function LessonPlayerScreen() {
           subtitle="Controls are labeled and have button roles for screen reader compatibility."
           testID="cardAccessibilityNote"
 >>>>>>> assignment6-rn
+=======
+>>>>>>> Assignment5
         />
       </View>
     </ScreenContainer>

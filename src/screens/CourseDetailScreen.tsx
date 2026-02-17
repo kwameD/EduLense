@@ -11,11 +11,15 @@ export function CourseDetailScreen() {
   const route = useRoute<RouteProp<AppStackParamList, "CourseDetail">>();
   const navigation = useNavigation<NativeStackNavigationProp<AppStackParamList>>();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Assignment5
   const course = useMemo(() => COURSES.find((c) => c.id === route.params.courseId), [route.params.courseId]);
 
   if (!course) {
     return (
       <ScreenContainer>
+<<<<<<< HEAD
 =======
   const course = useMemo(
     () => COURSES.find((c) => c.id === route.params.courseId),
@@ -26,6 +30,8 @@ export function CourseDetailScreen() {
     return (
       <ScreenContainer accessibilityLabel="Course details screen">
 >>>>>>> assignment6-rn
+=======
+>>>>>>> Assignment5
         <Text>Course not found.</Text>
       </ScreenContainer>
     );
@@ -33,6 +39,9 @@ export function CourseDetailScreen() {
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Assignment5
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800" }}>{course.title}</Text>
@@ -40,6 +49,7 @@ export function CourseDetailScreen() {
 
         <View style={{ height: 14 }} />
         <Text style={{ fontSize: 16, fontWeight: "800", marginBottom: 8 }}>Lessons</Text>
+<<<<<<< HEAD
 =======
     <ScreenContainer accessibilityLabel={`Course details: ${course.title}`}>
       <View style={{ paddingTop: 12 }}>
@@ -54,12 +64,15 @@ export function CourseDetailScreen() {
           Lessons
         </Text>
 >>>>>>> assignment6-rn
+=======
+>>>>>>> Assignment5
 
         {course.lessons.map((l) => (
           <Card
             key={l.id}
             title={l.title}
             subtitle={`${l.durationMin} min${l.completed ? " • Completed" : ""}`}
+<<<<<<< HEAD
 <<<<<<< HEAD
             accessibilityLabel={`${l.title} lesson card`}
             testID={`lesson-${l.id}`}
@@ -75,6 +88,11 @@ export function CourseDetailScreen() {
               })
             }
 >>>>>>> assignment6-rn
+=======
+            accessibilityLabel={`${l.title} lesson card`}
+            testID={`lesson-${l.id}`}
+            onPress={() => navigation.navigate("LessonPlayer", { courseId: course.id, lessonId: l.id })}
+>>>>>>> Assignment5
           />
         ))}
       </View>
