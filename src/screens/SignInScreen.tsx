@@ -11,30 +11,37 @@ export function SignInScreen() {
   const [password, setPassword] = useState("");
 
   return (
-    <ScreenContainer>
+    <ScreenContainer accessibilityLabel="Sign in screen">
       <View style={{ paddingTop: 18 }}>
-        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Welcome back</Text>
+        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
+          Welcome back
+        </Text>
+
         <TextField
           label="Email"
           value={email}
           onChangeText={setEmail}
           keyboardType="email-address"
           placeholder="name@example.com"
-          accessibilityLabel="Email input"
+          // Let TextField default label; add learnability hint:
+          accessibilityHint="Enter your email address"
           testID="inputEmail"
         />
+
         <TextField
           label="Password"
           value={password}
           onChangeText={setPassword}
           secureTextEntry
           placeholder="********"
-          accessibilityLabel="Password input"
+          accessibilityHint="Enter your password"
           testID="inputPassword"
         />
+
         <PrimaryButton
           title="Sign In"
-          accessibilityLabel="Sign in submit button"
+          accessibilityLabel="Sign in"
+          accessibilityHint="Attempts to sign in with the entered email and password"
           testID="btnSubmitSignIn"
           onPress={async () => {
             const res = await signIn(email, password);
