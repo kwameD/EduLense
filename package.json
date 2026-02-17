@@ -4,13 +4,13 @@
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo run:android",
+    "start": "set NODE_ENV=development&& expo start",
+    "android": "set NODE_ENV=development&& expo run:android",
+    "android:clean": "cd android && gradlew --stop && cd .. && rimraf android/.gradle android/build android/app/build",
     "ios": "expo run:ios",
     "lint": "eslint .",
     "test": "jest",
     "test:coverage": "jest --coverage",
-
     "e2e:build": "npx detox build -c android.emu.release",
     "e2e:test": "npx detox test -c android.emu.release"
   },
@@ -41,6 +41,7 @@
     "jest-circus": "^30.2.0",
     "jest-expo": "~54.0.17",
     "react-test-renderer": "19.1.0",
+    "rimraf": "^6.1.3",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.6.0"
   }
