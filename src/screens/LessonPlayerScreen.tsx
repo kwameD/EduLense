@@ -22,6 +22,7 @@ export function LessonPlayerScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <ScreenContainer>
 =======
       <ScreenContainer accessibilityLabel="Lesson player screen">
@@ -35,12 +36,16 @@ export function LessonPlayerScreen() {
 =======
       <ScreenContainer accessibilityLabel="Lesson player screen">
 >>>>>>> origin/assignment6-rn
+=======
+      <ScreenContainer accessibilityLabel="Lesson player screen">
+>>>>>>> assignment6-rn
         <Text>Lesson not found.</Text>
       </ScreenContainer>
     );
   }
 
   return (
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -53,6 +58,9 @@ export function LessonPlayerScreen() {
 =======
     <ScreenContainer accessibilityLabel={`Lesson player: ${lesson.title}`}>
 >>>>>>> origin/assignment6-rn
+=======
+    <ScreenContainer accessibilityLabel={`Lesson player: ${lesson.title}`}>
+>>>>>>> assignment6-rn
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800" }}>{lesson.title}</Text>
         <Text style={{ color: "#4b5563", marginTop: 4 }}>
@@ -70,6 +78,7 @@ export function LessonPlayerScreen() {
         <Card
           title="Accessibility Note"
           subtitle="Controls are labeled and have button roles for screen reader compatibility."
+<<<<<<< HEAD
 <<<<<<< HEAD
           accessibilityLabel="Accessibility note card"
 <<<<<<< HEAD
@@ -102,6 +111,9 @@ export function LessonPlayerScreen() {
 =======
           testID="cardAccessibilityNote"
 >>>>>>> origin/assignment6-rn
+=======
+          testID="cardAccessibilityNote"
+>>>>>>> assignment6-rn
         />
       </View>
     </ScreenContainer>

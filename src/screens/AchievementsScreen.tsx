@@ -15,6 +15,7 @@ export function AchievementsScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
@@ -23,12 +24,16 @@ export function AchievementsScreen() {
 =======
     <ScreenContainer accessibilityLabel="Achievements screen">
 >>>>>>> origin/assignment6-rn
+=======
+    <ScreenContainer accessibilityLabel="Achievements screen">
+>>>>>>> assignment6-rn
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
           Achievements
         </Text>
 
         {ACH.map((a) => (
+<<<<<<< HEAD
 <<<<<<< HEAD
           <Card key={a.id} title={a.title} subtitle={a.subtitle} accessibilityLabel={`${a.title} achievement`} />
 <<<<<<< HEAD
@@ -43,12 +48,15 @@ export function AchievementsScreen() {
         {ACH.map((a) => (
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
           <Card
             key={a.id}
             title={a.title}
             subtitle={a.subtitle}
             testID={`achievement-${a.id}`}
           />
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
@@ -57,6 +65,8 @@ export function AchievementsScreen() {
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
         ))}
       </View>
     </ScreenContainer>

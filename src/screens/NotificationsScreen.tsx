@@ -12,6 +12,7 @@ export function NotificationsScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
@@ -20,6 +21,9 @@ export function NotificationsScreen() {
 =======
     <ScreenContainer accessibilityLabel="Notifications screen">
 >>>>>>> origin/assignment6-rn
+=======
+    <ScreenContainer accessibilityLabel="Notifications screen">
+>>>>>>> assignment6-rn
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
           Notifications
@@ -59,6 +63,7 @@ export function NotificationsScreen() {
           }}
         >
           <Text style={{ fontWeight: "700" }}>Deadline reminders</Text>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <Switch accessibilityLabel="Deadline reminders toggle" value={deadlineReminders} onValueChange={setDeadlineReminders} />
 <<<<<<< HEAD
@@ -106,6 +111,8 @@ export function NotificationsScreen() {
           <Text style={{ fontWeight: "700" }}>Deadline reminders</Text>
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
           <Switch
             testID="toggleDeadlineReminders"
             accessibilityRole="switch"
@@ -116,6 +123,7 @@ export function NotificationsScreen() {
             onValueChange={setDeadlineReminders}
           />
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
@@ -123,6 +131,8 @@ export function NotificationsScreen() {
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
         </View>
       </View>
     </ScreenContainer>

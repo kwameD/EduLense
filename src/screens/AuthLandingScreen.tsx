@@ -13,6 +13,7 @@ export function AuthLandingScreen({ navigation }: Props) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
 =======
     <ScreenContainer accessibilityLabel="Authentication landing screen">
@@ -26,12 +27,16 @@ export function AuthLandingScreen({ navigation }: Props) {
 =======
     <ScreenContainer accessibilityLabel="Authentication landing screen">
 >>>>>>> origin/assignment6-rn
+=======
+    <ScreenContainer accessibilityLabel="Authentication landing screen">
+>>>>>>> assignment6-rn
       <View style={{ gap: 12, paddingTop: 24 }}>
         <Text style={{ fontSize: 28, fontWeight: "800" }}>EduLense</Text>
         <Text style={{ color: "#4b5563" }}>
           AI-powered learning support. Sign in to access your courses, schedule, and progress.
         </Text>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -45,6 +50,10 @@ export function AuthLandingScreen({ navigation }: Props) {
         <View accessible={false} style={{ height: 12 }} />
 
 >>>>>>> origin/assignment6-rn
+=======
+        <View accessible={false} style={{ height: 12 }} />
+
+>>>>>>> assignment6-rn
         <PrimaryButton
           title="Sign In"
           accessibilityLabel="Sign in"
@@ -57,6 +66,7 @@ export function AuthLandingScreen({ navigation }: Props) {
 
         <PrimaryButton
           title="Create Account"
+<<<<<<< HEAD
 <<<<<<< HEAD
           accessibilityLabel="Create account button"
 <<<<<<< HEAD
@@ -87,6 +97,10 @@ export function AuthLandingScreen({ navigation }: Props) {
           accessibilityLabel="Create account"
           accessibilityHint="Opens the account creation form"
 >>>>>>> origin/assignment6-rn
+=======
+          accessibilityLabel="Create account"
+          accessibilityHint="Opens the account creation form"
+>>>>>>> assignment6-rn
           testID="btnSignUp"
           onPress={() => navigation.navigate("SignUp")}
         />

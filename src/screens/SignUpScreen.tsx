@@ -16,6 +16,7 @@ export function SignUpScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
       <View style={{ paddingTop: 18 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Create your account</Text>
@@ -26,10 +27,15 @@ export function SignUpScreen() {
     <ScreenContainer accessibilityLabel="Create account screen">
       <View style={{ paddingTop: 18 }}>
 >>>>>>> origin/assignment6-rn
+=======
+    <ScreenContainer accessibilityLabel="Create account screen">
+      <View style={{ paddingTop: 18 }}>
+>>>>>>> assignment6-rn
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
           Create your account
         </Text>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
@@ -44,6 +50,8 @@ export function SignUpScreen() {
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
         <TextField
           label="Name"
           value={name}
@@ -53,6 +61,7 @@ export function SignUpScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           accessibilityLabel="Name input"
           testID="inputName"
         />
@@ -78,6 +87,12 @@ export function SignUpScreen() {
         />
 
 >>>>>>> origin/assignment6-rn
+=======
+          accessibilityHint="Enter your full name"
+          testID="inputName"
+        />
+
+>>>>>>> assignment6-rn
         <TextField
           label="Email"
           value={email}
@@ -88,6 +103,7 @@ export function SignUpScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           accessibilityLabel="Email input"
           testID="inputEmail"
         />
@@ -113,12 +129,19 @@ export function SignUpScreen() {
         />
 
 >>>>>>> origin/assignment6-rn
+=======
+          accessibilityHint="Enter your email address"
+          testID="inputEmail"
+        />
+
+>>>>>>> assignment6-rn
         <TextField
           label="Password"
           value={password}
           onChangeText={setPassword}
           secureTextEntry
           placeholder="8+ chars, include a number"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -131,11 +154,15 @@ export function SignUpScreen() {
 =======
           accessibilityHint="Create a password with at least 8 characters and a number"
 >>>>>>> origin/assignment6-rn
+=======
+          accessibilityHint="Create a password with at least 8 characters and a number"
+>>>>>>> assignment6-rn
           testID="inputPassword"
         />
 
         <PrimaryButton
           title="Create Account"
+<<<<<<< HEAD
 <<<<<<< HEAD
           accessibilityLabel="Create account submit button"
 <<<<<<< HEAD
@@ -158,6 +185,10 @@ export function SignUpScreen() {
           accessibilityLabel="Create account"
           accessibilityHint="Creates a new account with the entered name, email, and password"
 >>>>>>> origin/assignment6-rn
+=======
+          accessibilityLabel="Create account"
+          accessibilityHint="Creates a new account with the entered name, email, and password"
+>>>>>>> assignment6-rn
           testID="btnSubmitSignUp"
           onPress={async () => {
             const res = await signUp(name, email, password);

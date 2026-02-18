@@ -5,9 +5,12 @@ import { Pressable, Text, View } from "react-native";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
 type CardProps = {
   title: string;
   subtitle?: string;
@@ -19,6 +22,7 @@ type CardProps = {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
@@ -26,12 +30,15 @@ type CardProps = {
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
 export function Card({
   title,
   subtitle,
   rightText,
   onPress,
   accessibilityLabel,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -43,6 +50,9 @@ export function Card({
 =======
   accessibilityHint,
 >>>>>>> origin/assignment6-rn
+=======
+  accessibilityHint,
+>>>>>>> assignment6-rn
   testID,
 }: CardProps) {
   const isPressable = Boolean(onPress);
@@ -51,6 +61,7 @@ export function Card({
 
   const Body = (
     <View
+<<<<<<< HEAD
 <<<<<<< HEAD
       // ✅ Always attach testID to a real native element (fixes ProgressScreen test)
       testID={testID}
@@ -77,6 +88,10 @@ export function Card({
       // If pressable, keep the wrapper as the accessible element to avoid double-reading.
       importantForAccessibility={isPressable ? "no-hide-descendants" : "auto"}
 >>>>>>> origin/assignment6-rn
+=======
+      // If pressable, keep the wrapper as the accessible element to avoid double-reading.
+      importantForAccessibility={isPressable ? "no-hide-descendants" : "auto"}
+>>>>>>> assignment6-rn
       style={{
         borderWidth: 1,
         borderColor: "#e5e7eb",
@@ -93,6 +108,7 @@ export function Card({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           {!!subtitle && <Text style={{ marginTop: 4, color: "#4b5563" }}>{subtitle}</Text>}
 =======
           {!!subtitle && (
@@ -110,6 +126,11 @@ export function Card({
             <Text style={{ marginTop: 4, color: "#4b5563" }}>{subtitle}</Text>
           )}
 >>>>>>> origin/assignment6-rn
+=======
+          {!!subtitle && (
+            <Text style={{ marginTop: 4, color: "#4b5563" }}>{subtitle}</Text>
+          )}
+>>>>>>> assignment6-rn
         </View>
         {!!rightText && <Text style={{ fontWeight: "700" }}>{rightText}</Text>}
       </View>
@@ -120,10 +141,13 @@ export function Card({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   if (!onPress) return Body;
 =======
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
   if (!onPress) {
     return (
       <View testID={testID}>
@@ -131,6 +155,7 @@ export function Card({
       </View>
     );
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
@@ -141,6 +166,8 @@ export function Card({
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
 
   return (
     <Pressable
@@ -150,6 +177,7 @@ export function Card({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       accessibilityLabel={accessibilityLabel}
 =======
       accessibilityLabel={computedLabel}
@@ -165,6 +193,10 @@ export function Card({
       accessibilityLabel={computedLabel}
       accessibilityHint={accessibilityHint}
 >>>>>>> origin/assignment6-rn
+=======
+      accessibilityLabel={computedLabel}
+      accessibilityHint={accessibilityHint}
+>>>>>>> assignment6-rn
       onPress={onPress}
       style={({ pressed }) => ({ opacity: pressed ? 0.85 : 1 })}
     >

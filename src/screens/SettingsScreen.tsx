@@ -12,6 +12,7 @@ export function SettingsScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
@@ -20,6 +21,9 @@ export function SettingsScreen() {
 =======
     <ScreenContainer accessibilityLabel="Settings screen">
 >>>>>>> origin/assignment6-rn
+=======
+    <ScreenContainer accessibilityLabel="Settings screen">
+>>>>>>> assignment6-rn
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
           Settings
@@ -59,6 +63,7 @@ export function SettingsScreen() {
           }}
         >
           <Text style={{ fontWeight: "700" }}>High contrast</Text>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <Switch accessibilityLabel="High contrast toggle" value={highContrast} onValueChange={setHighContrast} />
 <<<<<<< HEAD
@@ -106,6 +111,8 @@ export function SettingsScreen() {
           <Text style={{ fontWeight: "700" }}>High contrast</Text>
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
           <Switch
             testID="toggleHighContrast"
             accessibilityRole="switch"
@@ -116,6 +123,7 @@ export function SettingsScreen() {
             onValueChange={setHighContrast}
           />
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
@@ -123,6 +131,8 @@ export function SettingsScreen() {
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
         </View>
       </View>
     </ScreenContainer>

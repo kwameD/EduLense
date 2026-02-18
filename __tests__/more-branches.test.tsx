@@ -44,6 +44,7 @@ describe("more branch coverage", () => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
@@ -68,6 +69,11 @@ describe("more branch coverage", () => {
     expect(ui.getByLabelText("pressable card")).toBeTruthy();
     
 >>>>>>> origin/assignment6-rn
+=======
+    expect(ui.getByTestId("card-pressable")).toBeTruthy();
+    expect(ui.getByLabelText("pressable card")).toBeTruthy();
+    
+>>>>>>> assignment6-rn
     // There can be more than one element with the same testID because Card sets it on View + Pressable
     fireEvent.press(ui.getAllByTestId("card-pressable")[0]);
     expect(pressed).toHaveBeenCalled();

@@ -10,6 +10,7 @@ export function ScheduleScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Schedule</Text>
@@ -20,10 +21,15 @@ export function ScheduleScreen() {
     <ScreenContainer accessibilityLabel="Schedule screen">
       <View style={{ paddingTop: 12 }}>
 >>>>>>> origin/assignment6-rn
+=======
+    <ScreenContainer accessibilityLabel="Schedule screen">
+      <View style={{ paddingTop: 12 }}>
+>>>>>>> assignment6-rn
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
           Schedule
         </Text>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
@@ -38,6 +44,8 @@ export function ScheduleScreen() {
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
         {SCHEDULE.map((s) => (
           <Card
             key={s.id}
@@ -47,6 +55,7 @@ export function ScheduleScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             accessibilityLabel={`${s.title} schedule item`}
 =======
             testID={`schedule-${s.id}`}
@@ -60,6 +69,9 @@ export function ScheduleScreen() {
 =======
             testID={`schedule-${s.id}`}
 >>>>>>> origin/assignment6-rn
+=======
+            testID={`schedule-${s.id}`}
+>>>>>>> assignment6-rn
           />
         ))}
       </View>

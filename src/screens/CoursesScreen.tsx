@@ -15,6 +15,7 @@ export function CoursesScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
       <View style={{ paddingTop: 12 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Courses</Text>
@@ -25,10 +26,15 @@ export function CoursesScreen() {
     <ScreenContainer accessibilityLabel="Courses screen">
       <View style={{ paddingTop: 12 }}>
 >>>>>>> origin/assignment6-rn
+=======
+    <ScreenContainer accessibilityLabel="Courses screen">
+      <View style={{ paddingTop: 12 }}>
+>>>>>>> assignment6-rn
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
           Courses
         </Text>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
@@ -43,6 +49,8 @@ export function CoursesScreen() {
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
         {COURSES.map((c) => (
           <Card
             key={c.id}
@@ -53,6 +61,7 @@ export function CoursesScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             accessibilityLabel={`${c.title} course card`}
 =======
             accessibilityLabel={`Open course: ${c.title}`}
@@ -68,6 +77,10 @@ export function CoursesScreen() {
             accessibilityLabel={`Open course: ${c.title}`}
             accessibilityHint="Opens course details"
 >>>>>>> origin/assignment6-rn
+=======
+            accessibilityLabel={`Open course: ${c.title}`}
+            accessibilityHint="Opens course details"
+>>>>>>> assignment6-rn
             testID={`course-${c.id}`}
             onPress={() => navigation.navigate("CourseDetail", { courseId: c.id })}
           />

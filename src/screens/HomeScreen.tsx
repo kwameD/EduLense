@@ -4,6 +4,7 @@ import { Text, View } from "react-native";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { useNavigation } from "@react-navigation/native";
 >>>>>>> assignment6-rn
@@ -14,12 +15,16 @@ import { useNavigation } from "@react-navigation/native";
 =======
 import { useNavigation } from "@react-navigation/native";
 >>>>>>> origin/assignment6-rn
+=======
+import { useNavigation } from "@react-navigation/native";
+>>>>>>> assignment6-rn
 import { ScreenContainer } from "../components/ScreenContainer";
 import { Card } from "../components/Card";
 import { PROGRESS } from "../data/progress";
 import { COURSES } from "../data/courses";
 
 export function HomeScreen() {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -31,11 +36,15 @@ export function HomeScreen() {
 =======
   const navigation = useNavigation<any>();
 >>>>>>> origin/assignment6-rn
+=======
+  const navigation = useNavigation<any>();
+>>>>>>> assignment6-rn
   const topCourse = COURSES[0];
 
   return (
     <ScreenContainer accessibilityLabel="Dashboard screen">
       <View style={{ paddingTop: 12 }}>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Dashboard</Text>
 <<<<<<< HEAD
@@ -60,11 +69,17 @@ export function HomeScreen() {
           Dashboard
         </Text>
 >>>>>>> origin/assignment6-rn
+=======
+        <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
+          Dashboard
+        </Text>
+>>>>>>> assignment6-rn
 
         <Card
           title="Continue learning"
           subtitle={`${topCourse.title} • ${topCourse.instructor}`}
           rightText={`${topCourse.progressPct}%`}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94,10 +109,19 @@ export function HomeScreen() {
         />
 
 >>>>>>> origin/assignment6-rn
+=======
+          onPress={() => navigation.navigate("Courses")}
+          accessibilityLabel={`Continue learning: ${topCourse.title}`}
+          accessibilityHint="Opens your courses"
+          testID="cardContinueLearning"
+        />
+
+>>>>>>> assignment6-rn
         <Text style={{ fontSize: 16, fontWeight: "800", marginBottom: 8 }}>
           This week
         </Text>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
@@ -106,6 +130,8 @@ export function HomeScreen() {
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
         {PROGRESS.map((m) => (
           <Card
             key={m.id}
@@ -115,6 +141,7 @@ export function HomeScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             accessibilityLabel={`${m.label} card`}
 =======
             // Not pressable, so keep it simple: no accessibilityLabel needed.
@@ -130,6 +157,10 @@ export function HomeScreen() {
             // Not pressable, so keep it simple: no accessibilityLabel needed.
             testID={`cardMetric-${m.id}`}
 >>>>>>> origin/assignment6-rn
+=======
+            // Not pressable, so keep it simple: no accessibilityLabel needed.
+            testID={`cardMetric-${m.id}`}
+>>>>>>> assignment6-rn
           />
         ))}
       </View>

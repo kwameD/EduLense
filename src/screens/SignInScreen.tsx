@@ -15,6 +15,7 @@ export function SignInScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ScreenContainer>
       <View style={{ paddingTop: 18 }}>
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>Welcome back</Text>
@@ -25,10 +26,15 @@ export function SignInScreen() {
     <ScreenContainer accessibilityLabel="Sign in screen">
       <View style={{ paddingTop: 18 }}>
 >>>>>>> origin/assignment6-rn
+=======
+    <ScreenContainer accessibilityLabel="Sign in screen">
+      <View style={{ paddingTop: 18 }}>
+>>>>>>> assignment6-rn
         <Text style={{ fontSize: 22, fontWeight: "800", marginBottom: 12 }}>
           Welcome back
         </Text>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
@@ -43,6 +49,8 @@ export function SignInScreen() {
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
         <TextField
           label="Email"
           value={email}
@@ -53,6 +61,7 @@ export function SignInScreen() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           accessibilityLabel="Email input"
           testID="inputEmail"
         />
@@ -80,12 +89,20 @@ export function SignInScreen() {
         />
 
 >>>>>>> origin/assignment6-rn
+=======
+          // Let TextField default label; add learnability hint:
+          accessibilityHint="Enter your email address"
+          testID="inputEmail"
+        />
+
+>>>>>>> assignment6-rn
         <TextField
           label="Password"
           value={password}
           onChangeText={setPassword}
           secureTextEntry
           placeholder="********"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -98,11 +115,15 @@ export function SignInScreen() {
 =======
           accessibilityHint="Enter your password"
 >>>>>>> origin/assignment6-rn
+=======
+          accessibilityHint="Enter your password"
+>>>>>>> assignment6-rn
           testID="inputPassword"
         />
 
         <PrimaryButton
           title="Sign In"
+<<<<<<< HEAD
 <<<<<<< HEAD
           accessibilityLabel="Sign in submit button"
 <<<<<<< HEAD
@@ -125,6 +146,10 @@ export function SignInScreen() {
           accessibilityLabel="Sign in"
           accessibilityHint="Attempts to sign in with the entered email and password"
 >>>>>>> origin/assignment6-rn
+=======
+          accessibilityLabel="Sign in"
+          accessibilityHint="Attempts to sign in with the entered email and password"
+>>>>>>> assignment6-rn
           testID="btnSubmitSignIn"
           onPress={async () => {
             const res = await signIn(email, password);

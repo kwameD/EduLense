@@ -5,9 +5,12 @@ import { Text, TextInput, View } from "react-native";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
 type TextFieldProps = {
   label: string;
   value: string;
@@ -25,6 +28,7 @@ type TextFieldProps = {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
@@ -32,6 +36,8 @@ type TextFieldProps = {
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
 export function TextField({
   label,
   value,
@@ -44,6 +50,7 @@ export function TextField({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Assignment5
 =======
@@ -52,6 +59,10 @@ export function TextField({
   accessibilityHint,
   errorText,
 >>>>>>> origin/assignment6-rn
+=======
+  accessibilityHint,
+  errorText,
+>>>>>>> assignment6-rn
   testID,
   autoCapitalize = "none",
 }: TextFieldProps) {
@@ -68,6 +79,7 @@ export function TextField({
 
       <TextInput
         testID={testID}
+<<<<<<< HEAD
 <<<<<<< HEAD
         accessibilityLabel={accessibilityLabel}
 <<<<<<< HEAD
@@ -102,11 +114,16 @@ export function TextField({
         accessibilityLabel={accessibilityLabel ?? label}
         accessibilityHint={mergedHint || undefined}
 >>>>>>> origin/assignment6-rn
+=======
+        accessibilityLabel={accessibilityLabel ?? label}
+        accessibilityHint={mergedHint || undefined}
+>>>>>>> assignment6-rn
         value={value}
         onChangeText={onChangeText}
         placeholder={placeholder}
         keyboardType={keyboardType ?? "default"}
         secureTextEntry={secureTextEntry}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -137,6 +154,12 @@ export function TextField({
           borderWidth: 1,
           borderColor: hasError ? "#b91c1c" : "#d1d5db",
 >>>>>>> origin/assignment6-rn
+=======
+        autoCapitalize={autoCapitalize}
+        style={{
+          borderWidth: 1,
+          borderColor: hasError ? "#b91c1c" : "#d1d5db",
+>>>>>>> assignment6-rn
           paddingHorizontal: 12,
           paddingVertical: 10,
           borderRadius: 12,
@@ -146,9 +169,12 @@ export function TextField({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
 
       {hasError ? (
         <Text
@@ -159,6 +185,7 @@ export function TextField({
         </Text>
       ) : null}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> assignment6-rn
 =======
 >>>>>>> Assignment5
@@ -166,6 +193,8 @@ export function TextField({
 >>>>>>> origin/Assignment5
 =======
 >>>>>>> origin/assignment6-rn
+=======
+>>>>>>> assignment6-rn
     </View>
   );
 }
